@@ -1,0 +1,89 @@
+.top-part{
+    background-color: #007bff;
+}
+
+.top-text{
+    color: white;
+    padding: 10px;
+}
+.top-text a{
+    color: white;
+}
+
+.donate-bg{
+    
+    background-color: #c71e1e;
+    
+}
+
+
+.wrap ul li .dropdown-menu a:hover{
+    background: transparent;
+    color:#0076B6;
+    }
+
+.navbar-nav .nav-item .navbar-texts{
+    color:#0076B6;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .navbar-texts:hover{
+    color:#c71e1e;
+}
+
+.navbar-nav .nav-item .dropdown-menu a
+{
+    color:white;
+}
+
+.navbar-nav .nav-item .dropdown-menu a:hover
+{
+    background: transparent;
+    color:#0076B6;}
+
+
+    
+
+    .bg-overlay {
+        background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(images/bgnesa.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        padding-top: 50px;
+    }
+
+
+
+    .welcome-header{
+        color: #0076B6;
+    }
+.bt-hover{
+    color: black;
+    background-color: white;
+    border-color: #c71e1e;
+}
+
+.bt-hover:hover {
+    background-color: #dc3545;
+    color: white;
+}
+.dropdown-menu{
+    background-color: #c71e1e;
+}
+.carousel-item{
+    height: 400px;
+}
+
+.entry-content {
+    padding: 0 0 0 30px;
+}
+
+
+footer{
+    background-color: #007bff;
+}
+.copyright{
+    background-color: #096a9e;
+    color: white;
+}
