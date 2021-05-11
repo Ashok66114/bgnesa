@@ -123,60 +123,139 @@
           </ul>
         </div>
       </nav>
-    
-
-    
-
-
-    
 
 <!--content-->
-<div class="container-fluid">
+<div class="container-fluid mb-5">
 <div class="bg-overlay" style="background-image: url(images/bgnesa.jpeg); height: 200px;">
     <div class="container">
 	<div class="row">
-		<h1 class="text-left">About US</h1>
+		<h1 class="text-left">Membership Form</h1>
     </div>
     </div>
     </div>
 </div>
 
+<div class="member-page-wrap">
+  <div class="container bg-light">
+    <div class="row">
+      <div class="col-12">
+        <form method="POST" class="contact-form">
+          <fieldset>
+            <legend><b>Member Contact Information</b></legend>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <label>Full Name</label>
+                    <input placeholder="Full Name" name="name" id="name" type="text" class="form-control" required="required">
+                </div>
 
-<div class="container-fluid mb-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 welcome-content mt-5">
-                <h1 class="welcome-header">Welcome to BGNESA UK</h1>
-                <div class="text-justify mb-md-3">
-                   <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti numquam alias unde est omnis adipisci
-                     tempora. Ullam, dicta vel, animi repellat placeat culpa possimus ipsam laudantium excepturi explicabo quam adipisci?
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe nihil adipisci laudantium vero assumenda
-                      ipsa sapiente consequatur officia eligendi repudiandae quia modi obcaecati, dolor optio ex aperiam id. Rem, vitae.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis quam non veritatis doloremque quibusdam cumque. 
-                    Voluptate veniam ratione vitae atque! Tenetur, vitae assumenda hic deserunt amet dignissimos natus dolorum fugiat!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam neque sequi, magnam optio eius 
-                    cumque nostrum impedit possimus ea pariatur illum, esse corporis placeat nam beatae unde natus, laudantium commodi.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis quis voluptatum cupiditate asperiores officia
-                    ima aperiam dolorum porro.
-                   </p>
-                   <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti numquam alias unde est omnis adipisci
-                     tempora. Ullam, dicta vel, animi repellat placeat culpa possimus ipsam laudantium excepturi explicabo quam adipisci?
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe nihil adipisci laudantium vero assumenda
-                      deser
-                    </p>
-                   <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti numquam alias unde est omnis adipisci
-                     tempora. Ullam, dicta vel, animi repellat placeat culpa possimus ipsam laudantium excepturi explicabo quam adipisci?
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe nihil adipisci laudantium vero assumenda
-                      ip
-                    </p>
+                <div class="form-group col-md-6">
+                    <label>Email Address</label>
+                    <input placeholder="Email Address" name="email" id="email" type="email" class="form-control" required="required">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="phone">Phone</label>
+                    <input placeholder="Enter Phone" name="phone" id="phone" type="text" class="form-control" required="required">
                 </div>
             </div>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label>Address 1</label>
+                    <input placeholder="Address 1" name="address_one" id="address_one" type="text" class="form-control" required="required">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Address 2</label>
+                    <input placeholder=" Address 2" name="address_two" id="address_two" type="text" class="form-control">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Town / City</label>
+                    <input placeholder="Enter Town / City" name="city" id="city" type="text" class="form-control">
+                </div>          
+
+                <div class="form-group col-md-6">
+                    <label>Postal Code</label>
+                    <input placeholder=" Postal Code" name="postal_code" id="postal_code" type="text" class="form-control">
+                </div>              
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-9">
+                    <label>Address in Nepal</label>
+                    <input placeholder=" Address in Nepal" name="address_in_nepal" id="address_in_nepal" type="text" class="form-control" required="required">
+                </div>
+
+                 <div class="form-group col-md-3">
+                    <label for="image">User Image</label><br>
+                    <input type="file" id="image" name="image">
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><b>Membership Type</b></legend>
+          <div class="form-group">
+              <label>Membership Type</label>
+              <select name="membership_type" id="membership" class="form-control">
+                  <option selected="selected">Select Membership Type</option>
+                  <option value="Individual Life Member">Individual Life Member</option>
+                  <option value="Family Life Member">Family Life Member</option>
+                  <option value="Ordinary Member">Ordinary Member</option>
+              </select>
+          </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><b>Declaration</b></legend>
+            <div class="form-group">
+                <label>1. Photographs of BGNESA members may be used in various BGNESA communications incl. the newsletter and website. Group photographs taken at BGNESA events may be used without identifying individual members. For individual photographs, please indicate your permission for use</label><br>
+                Yes <input type="radio" name="photograph_permission" value="Yes"> 
+                No  <input type="radio" name="photograph_permission" value="No">
+            </div>
+
+            <div class="form-group">
+                <label>2. Have you been convicted of a criminal offence which is not spent under the Rehabilitation of Offenders Act 1974?</label><br>
+                Yes <input type="radio" name="crime_committed" value="Yes">
+                No <input type="radio" name="crime_committed" value="No">
+            </div>
+
+            <div id="crime_details" class="form-group" style="display: none;">
+                <label>Criminal Offence Details</label>
+                <textarea name="criminal_offence" rows="6" class="form-control" placeholder="Enter Details"></textarea>
+            </div>
+        </fieldset>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="http://www.bgnesa.org.uk/captcha.jpg" alt="Captcha">
+            </div>
+
+            <div class="col-md-6">
+                <input type="text" class="form-control " id="captcha" name="captcha" placeholder="Enter Captcha">
+            </div>
         </div>
+        <fieldset>
+            <legend><b>Bank Details</b></legend>
+            <div class="form-group">
+                <label>
+                    <b>Please transfer Your membership fee in this Bank account.</b><br>
+
+                    Organization Name: BGNESA UK<br>
+                    Bank Name: home:bankname<br><br>
+                    Sort Code: home:bankscno <br>
+                    Account Name: home:bankacno <br>
+
+                </label>
+            </div>
+        </fieldset>
+        <button class="btn bt-hover mb-4">Send Member Request</button>
+        </form>
+      </div>
     </div>
+  </div>
 </div>
-                
-            
-             
+
 
 <!--footer section-->
 <footer class="footer">
@@ -229,7 +308,6 @@
         </div>
     </div>
 </div>
-
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="qaZ8htZI"></script>
 </body>

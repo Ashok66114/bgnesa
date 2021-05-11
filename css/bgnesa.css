@@ -1,5 +1,6 @@
 .top-part{
     background-color: #007bff;
+    
 }
 
 .top-text{
@@ -20,7 +21,12 @@
 .wrap ul li .dropdown-menu a:hover{
     background: transparent;
     color:#0076B6;
+
     }
+    .wrap ul li .dropdown-menu {
+       z-index: 1025;
+    
+        }
 
 .navbar-nav .nav-item .navbar-texts{
     color:#0076B6;
@@ -39,25 +45,30 @@
 .navbar-nav .nav-item .dropdown-menu a:hover
 {
     background: transparent;
-    color:#0076B6;}
+    color:#0076B6;
+}
 
 
     
 
-    .bg-overlay {
+.bg-overlay{
         background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(images/bgnesa.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         color: #fff;
         padding-top: 50px;
-    }
-
-
-
-    .welcome-header{
+}
+ 
+.welcome-header{
         color: #0076B6;
     }
+
+
+.navbar-toggler{
+    background-color: #0076B6;
+}
+
 .bt-hover{
     color: black;
     background-color: white;
@@ -80,6 +91,22 @@
 }
 
 
+.fmenu-shadow {
+    text-shadow: 0 0 4px #ffffff;
+}
+
+.contact-links ul li{
+    padding: 5px;;
+}
+
+.useful-links ul li{
+    padding: 5px;
+}
+
+.contact-links ul li{
+    padding: 10px;
+}
+
 footer{
     background-color: #007bff;
 }
@@ -87,3 +114,8 @@ footer{
     background-color: #096a9e;
     color: white;
 }
+
+
+
+
+
